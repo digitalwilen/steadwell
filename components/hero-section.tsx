@@ -21,24 +21,12 @@ export function HeroSection() {
   }
 
   return (
-    <section className="relative overflow-hidden border-b border-border bg-background">
-      {/* Background image */}
-      <div className="absolute inset-0">
-        <Image
-          src="/hero.jpg"
-          alt="Family reviewing coordination plan"
-          fill
-          priority
-          className="object-cover object-center"
-        />
-        {/* Gradient overlay for readability */}
-        <div className="absolute inset-0 bg-gradient-to-r from-background/90 via-background/80 to-background/30" />
-      </div>
-
-      {/* Content */}
-      <div className="relative z-10 py-16 sm:py-24 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-7xl mx-auto">
-          <div className="max-w-2xl lg:max-w-3xl flex flex-col gap-6">
+    <section className="py-16 sm:py-24 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-secondary to-background border-b border-border">
+      <div className="max-w-7xl mx-auto">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          
+          {/* LEFT — TEXT */}
+          <div className="flex flex-col gap-6 relative z-10">
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-balance text-foreground">
               When your parent's next move becomes your job, we make it manageable.
             </h1>
@@ -85,12 +73,24 @@ export function HeroSection() {
               </div>
             </div>
 
-            <div className="bg-accent/10 border border-accent/20 rounded-lg p-4 mt-2 max-w-xl">
+            <div className="bg-accent/10 border border-accent/20 rounded-lg p-4 mt-2">
               <p className="text-foreground font-medium leading-relaxed">
                 Families typically reclaim 25–40 hours of coordination and vendor wrangling—per project.
               </p>
             </div>
           </div>
+
+          {/* RIGHT — IMAGE */}
+          <div className="relative w-full h-[420px] sm:h-[480px] rounded-lg overflow-hidden shadow-lg">
+            <Image
+              src="/hero.jpg"
+              alt="Family reviewing coordination plan"
+              fill
+              priority
+              className="object-cover object-center"
+            />
+          </div>
+
         </div>
       </div>
     </section>
