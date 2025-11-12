@@ -24,6 +24,7 @@ export function HeroSection() {
     <section className="py-16 sm:py-24 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-secondary to-background border-b border-border">
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center relative">
+
           {/* Content */}
           <div className="flex flex-col gap-6 relative z-10">
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-balance text-foreground">
@@ -41,6 +42,7 @@ export function HeroSection() {
               >
                 Schedule Your Free 20-Minute Clarity Call
               </Button>
+
               <Button
                 onClick={handleSecondaryClick}
                 variant="outline"
@@ -55,12 +57,16 @@ export function HeroSection() {
                 <div className="w-2 h-2 bg-accent rounded-full" />
                 <span className="font-medium">Bonded & Insured Vendors</span>
               </div>
+
               <span className="text-foreground/50">|</span>
+
               <div className="flex items-center gap-2">
                 <div className="w-2 h-2 bg-accent rounded-full" />
                 <span className="font-medium">Background-Checked Teams</span>
               </div>
+
               <span className="text-foreground/50">|</span>
+
               <div className="flex items-center gap-2">
                 <div className="w-2 h-2 bg-accent rounded-full" />
                 <span className="font-medium">Serving Austin & Raleigh</span>
@@ -76,15 +82,16 @@ export function HeroSection() {
           </div>
 
           {/* Hero Image */}
-          <div className="relative z-0 w-full rounded-lg overflow-hidden shadow-lg">
+          <div className="relative z-0 w-full rounded-lg overflow-hidden shadow-lg h-[480px]">
             <Image
-              src="/placeholder.svg?height=600&width=600"
+              src="/hero.jpg"
               alt="Family reviewing coordination plan"
               fill
-              className="object-cover"
               priority
+              className="object-cover object-center"
             />
           </div>
+
         </div>
       </div>
     </section>
