@@ -82,7 +82,7 @@ export function HeroSection() {
           </div>
 
           {/* Hero Image */}
-          <div className="relative z-0 w-full rounded-lg overflow-hidden shadow-lg h-[480px]">
+          <div className="relative z-0 w-full rounded-lg overflow-hidden shadow-lg h-[480px] lg:h-full lg:min-h-[520px]">
             <Image
               src="/hero.jpg"
               alt="Family reviewing coordination plan"
